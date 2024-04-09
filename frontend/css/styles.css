@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0; /* Aumentamos el espacio alrededor del título */
+  }
+  
+  header h1 {
+    font-size: 3rem; /* Tamaño más grande del título */
+    margin: 0; /* Eliminamos el margen por defecto del h1 */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centramos el contenido dentro de los contenedores */
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    align-items: center; /* Centramos los elementos verticalmente */
+    margin-bottom: 20px; /* Aumentamos el espacio debajo de la barra de búsqueda */
+  }
+  
+  label {
+    font-size: 1.2rem; /* Tamaño de letra más grande */
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 15px; /* Aumentamos el tamaño de la barra de búsqueda */
+    border: 2px solid #333; /* Añadimos un borde para hacerla más llamativa */
+    border-radius: 8px; /* Redondeamos los bordes */
+  }
+  
+  button {
+    padding: 15px 30px; /* Aumentamos el tamaño del botón */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #results {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
