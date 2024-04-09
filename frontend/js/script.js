@@ -7,16 +7,13 @@ function analizarURL() {
       resultsDiv.innerHTML = "<p>Por favor, ingresa un enlace válido comenzando con 'http://' o 'https://'</p>";
       return;
     }
-  
-    // Recopilación de datos de redes sociales (ejemplo básico)
-    var redesSociales = ["Twitter", "Facebook", "Instagram", "LinkedIn", "GitHub"];
-    var resultadosHTML = "<h2>Resultados del análisis para: " + urlInput + "</h2>";
-    resultadosHTML += "<ul>";
-    redesSociales.forEach(function(red) {
-      resultadosHTML += "<li>" + red + ": Datos recopilados</li>";
+    fetch("http://localhost:5000/search-url?searchTerm=" + urlInput)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      mostrarResultados(data);
     });
-    resultadosHTML += "</ul>";
-  
+
     resultsDiv.innerHTML = resultadosHTML;
+
   }
-  
