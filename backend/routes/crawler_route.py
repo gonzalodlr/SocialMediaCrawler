@@ -1,4 +1,4 @@
-import os, requests
+import os, requests, re
 from bs4 import BeautifulSoup
 from flask import Blueprint, jsonify, request
 
@@ -29,7 +29,7 @@ def crawler_finder(url):
 
             # Conjunto para almacenar enlaces de redes sociales únicos
             social_links = set()
-
+            array_links = []
             # Filtrar los enlaces de redes sociales y evitar duplicados
             for link in links:
                 href = link.get('href')
@@ -41,9 +41,10 @@ def crawler_finder(url):
 
             # Imprimir los enlaces de redes sociales únicos encontrados
             for social_link in social_links:
-                print(social_link)
+                #print(social_link)
+                array_links.append(social_link)
             
-            return social_links
+            return array_links
 
     except Exception as e:
         print(f"Error: {e}")
