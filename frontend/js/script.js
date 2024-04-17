@@ -16,9 +16,8 @@ function analizarURL() {
   fetch(URL_BACKEND + "search-url?searchTerm=" + urlInput)
     .then((response) => response.json())
     .then((data) => {
-      const linksData = JSON.parse(data);
-      console.log(linksData);
-      linksData.forEach((link) => {
+      console.log(data);
+      data.forEach((link) => {
         links.push(link);
         console.log(link);
       });
