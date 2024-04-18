@@ -2,19 +2,19 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: rgb(192, 201, 217);
   }
   
   header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     text-align: center;
     padding: 40px 0; /* Aumentamos el espacio alrededor del título */
   }
   
   header h1 {
-    font-size: 3rem; /* Tamaño más grande del título */
-    margin: 0; /* Eliminamos el margen por defecto del h1 */
+    font-size: 3rem;
+    margin: 0; 
   }
   
   .container {
@@ -41,7 +41,7 @@ body {
   input[type="text"] {
     flex: 1;
     padding: 15px; /* Aumentamos el tamaño de la barra de búsqueda */
-    border: 2px solid #333; /* Añadimos un borde para hacerla más llamativa */
+    border: 2px solid rgb(82, 78, 78); /* Añadimos un borde para hacerla más llamativa */
     border-radius: 8px; /* Redondeamos los bordes */
   }
   
@@ -67,4 +67,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
+
+  .platform {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
   
+  .platform a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .platform .count {
+    font-weight: bold;
+  }

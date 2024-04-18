@@ -4,7 +4,7 @@ let links = [];
 
 function analizarURL() {
   var urlInput = document.getElementById("urlInput").value;
-  var resultsDiv = document.getElementById("results");
+  var redesSociales = document.getElementById("resumenRedesSociales");
 
   // Validación del formato del enlace (se puede mejorar)
   if (!urlInput.startsWith("http://") && !urlInput.startsWith("https://")) {
@@ -20,6 +20,11 @@ function analizarURL() {
       data.forEach((link) => {
         links.push(link);
         console.log(link);
+      });
+
+      // Iterar sobre la lista de redes sociales y agregarlas al resumen
+      links.forEach(function(redSocial) {
+        resumenRedesSociales.innerHTML += "<p>" + redSocial + "</p>";
       });
     })
     .catch((error) => {
