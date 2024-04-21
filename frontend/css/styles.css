@@ -1,84 +1,121 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(192, 201, 217);
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0; /* Aumentamos el espacio alrededor del título */
-  }
-  
-  header h1 {
-    font-size: 3rem;
-    margin: 0; 
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centramos el contenido dentro de los contenedores */
-  }
-  
-  .input-container {
-    display: flex;
-    justify-content: center; /* Centramos los elementos horizontalmente */
-    align-items: center; /* Centramos los elementos verticalmente */
-    margin-bottom: 20px; /* Aumentamos el espacio debajo de la barra de búsqueda */
-  }
-  
-  label {
-    font-size: 1.2rem; /* Tamaño de letra más grande */
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 15px; /* Aumentamos el tamaño de la barra de búsqueda */
-    border: 2px solid rgb(82, 78, 78); /* Añadimos un borde para hacerla más llamativa */
-    border-radius: 8px; /* Redondeamos los bordes */
-  }
-  
-  button {
-    padding: 15px 30px; /* Aumentamos el tamaño del botón */
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #results {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(192, 201, 217);
+}
 
-  .platform {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
-  }
-  
-  .platform a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .platform .count {
-    font-weight: bold;
-  }
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  /* Aumentamos el espacio alrededor del título */
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Centramos el contenido dentro de los contenedores */
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  /* Centramos los elementos horizontalmente */
+  align-items: center;
+  /* Centramos los elementos verticalmente */
+  margin-bottom: 20px;
+  /* Aumentamos el espacio debajo de la barra de búsqueda */
+}
+
+label {
+  font-size: 1.2rem;
+  /* Tamaño de letra más grande */
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  /* Aumentamos el tamaño de la barra de búsqueda */
+  border: 2px solid rgb(82, 78, 78);
+  /* Añadimos un borde para hacerla más llamativa */
+  border-radius: 8px;
+  /* Redondeamos los bordes */
+}
+
+button {
+  padding: 15px 30px;
+  /* Aumentamos el tamaño del botón */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#results {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.platform {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.platform a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.platform .count {
+  font-weight: bold;
+}
+
+.preview-container {
+  max-width: 600px;
+  margin: auto; /* Centra horizontalmente y verticalmente */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Para alinear verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.preview-container img {
+  max-width: 200px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.preview-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.preview-container p {
+  text-align: justify;
+}
