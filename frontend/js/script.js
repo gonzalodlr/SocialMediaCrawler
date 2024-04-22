@@ -49,7 +49,7 @@ function analizarURL() {
 
       // Iterar sobre la lista de redes sociales y agregarlas al resumen
       links.forEach(function (redSocial) {
-        resumenRedesSociales.innerHTML += "<p>" + redSocial + "</p>";
+        resumenRedesSociales.innerHTML += "<a href='" + redSocial + "'>" + redSocial + "</a><br>";
       });
     })
     .catch((error) => {
